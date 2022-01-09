@@ -1,10 +1,10 @@
 import os
 
 #print(os.getcwd()) #To know the current working dirctory
-#print(os.listdir())  #Listing te content of current directory
+#print(os.listdir())  #Listing the content of present directory
 
 try:
-    # Changing the current path to the path where housekeepin needs to be performed
+    # Changing the current path to the path where housekeeping needs to be performed
     os.chdir(r"C:\Users\Anjika")
 
     # printing the present directory
@@ -24,6 +24,8 @@ try:
 
 except FileNotFoundError:
     print("path does not exist")
+    
+    # finally statement always run irrespective of the error
 finally:
     print("code completed")
 
